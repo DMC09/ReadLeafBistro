@@ -1,6 +1,5 @@
 doctype html
-//
-  Layout for app
+//Layout for app
 html
   head
     block seo
@@ -8,21 +7,23 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
     link(rel='stylesheet', href='/css/main.css')
-  body.is-preload
+  body
     // Wrapper
     #wrapper
       // Main
       #main
         block content
-      // Sidebar
-      #sidebar
-
-
-
         footer#footer
           p.copyright
             | © Untitled. These are my rights. 
-
+          .hours
+            | Monday-Thursday: 11am - 10pm
+            | Friday-Sunday: 12am - 12pm
+          .address
+            | 654 Embry St, Houston, Tx 77027
+          .contact
+            | &#x2709 RLBistro@gmail.com
+            | &#9742 (213)-4288-452
     // Scripts
     script(src='/js/jquery.min.js')
     script(src='/js/browser.min.js')
