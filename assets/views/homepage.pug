@@ -2,10 +2,17 @@ extends layouts/app
 
 block seo
   title Red Leaf Bistro
-block content
-  // Banner
-  section#banner
-    .content
-      header
-        h1 
-          | Read leaf Bistro
+  body
+    // Main Container
+    #main-container
+      block content
+        // Banner
+        section#banner
+          .content
+            header
+              h1 
+                | Read leaf Bistro
+              h5
+                | This is the Homepage
+block foot
+block scripts

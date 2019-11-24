@@ -6,27 +6,33 @@ html
     title Red Leaf Bistro
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
-    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='./public/css/main.css')
   body
-    // Wrapper
-    #wrapper
-      // Main
-      #main
-        block content
-        footer#footer
-          p.copyright
-            | © Untitled. These are my rights. 
-          .hours
-            | Monday-Thursday: 11am - 10pm
-            | Friday-Sunday: 12am - 12pm
-          .address
-            | 654 Embry St, Houston, Tx 77027
-          .contact
-            | &#x2709 RLBistro@gmail.com
-            | &#9742 (213)-4288-452
+    // Main Container
+    #main-container
+      block nav
+      nav
+        ul 
+          li
+            a home 
+          li
+            a about
+          li
+            a reservations
+          li
+            a contact
+      block foot
+      footer 
+        p.copyright
+          | Footer content
+        .hours
+          | Monday-Thursday: 11am - 10pm
+          | Friday-Sunday: 12am - 12pm
+        .address
+          | 654 Embry St, Houston, Tx 77027
+        .contact
+          | &#x2709 RLBistro@gmail.com
+          | &#9742 (213)-4288-452
     // Scripts
-    script(src='/js/jquery.min.js')
-    script(src='/js/browser.min.js')
-    script(src='/js/breakpoints.min.js')
-    script(src='/js/util.js')
+    block scripts
     script(src='/js/main.js')
