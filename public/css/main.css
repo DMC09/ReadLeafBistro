@@ -10,33 +10,70 @@ body {
 
 nav {
   outline: 1px solid green;
-  height: 10%;
+  height: 15%;
   width: 90%;
+  display: flex;
+  overflow: visible;
+}
+
+.nav-menu {
+  outline: 1px solid green;
+  transform: translateX(-270%);
+  display: inline-flex;
+  flex-flow: column;
+  line-height: 1.5;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+
+.navSlide {
+  transform: translateX(0%);
+}
+
+.hamburger {
+  transition: all .2s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.line {
+  height: 2px;
+  width: 40px;
+  background: #A46776;
+  margin: .5rem 0;
 }
 
 #main-content {
   outline: 1px solid green;
   height: 50%;
   width: 90%;
+  visibility: hidden;
 }
 
 footer {
-  outline: 1px solid green;
   padding-top: 2rem;
-  height: 40%;
+  height: 35%;
   color: white;
   background: #323232;
   width: 90%;
   display: flex;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 footer>div {
   width: 33%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
   display: flex;
   flex-flow: column;
   justify-content: evenly;
+  margin: 1rem;
 }
 
 footer>div>span {

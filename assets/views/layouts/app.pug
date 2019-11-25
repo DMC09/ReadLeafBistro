@@ -10,15 +10,14 @@ html
   body
     // Template Container
     #Layout-container
-      // Nav Container
       block nav
-      div.hamburger
-        div.line
-        div.line
-        div.line
       //Nav-menu container
-      nav.nav-menu NAV CONTENT
-        ul 
+      nav 
+        div.hamburger(onclick='navAni()')
+          div.line
+          div.line
+          div.line
+        ul.nav-menu
           li
             a home 
           li
@@ -48,4 +47,4 @@ html
           | &#9742 (213)-4288-452
     // Scripts
     block scripts
-    script(src='/js/main.js')
+    script(src='./js/main.js')

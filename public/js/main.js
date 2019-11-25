@@ -1,7 +1,8 @@
-const express = require('express')
-const app = express()
-app.set('view engine', 'pug')
+burger = document.querySelector('.hamburger')
+menu = document.querySelector('.nav-menu')
 
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
+
+const navAni = () => {
+  console.log('function is starting');
+  menu.classList.toggle('navSlide')
+}
