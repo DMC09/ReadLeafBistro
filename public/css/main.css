@@ -22,6 +22,7 @@ nav {
 
 footer {
   outline: 1px solid green;
+  padding-top: 2rem;
   height: 40%;
   color: white;
   background: #323232;
@@ -46,9 +47,13 @@ footer>div>span {
   text-align: center;
 }
 
-footer .address {
-  border-left: 1px solid red;
-  border-right: 1px solid red;
+.border {
+  background: #A46776;
+  height: 75%;
+  width: 2.5px;
+  left: 1%;
+  position: relative;
+  top: 8%;
 }
 
 #Layout-container {
