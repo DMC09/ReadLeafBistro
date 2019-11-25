@@ -1,1 +1,60 @@
 @import "reset.css";
+
+body {
+  padding: 1.5rem;
+  border: 4px solid purple;
+  height: 100vh;
+  background: rgb(50, 50, 50);
+  background: linear-gradient(0deg, rgba(50, 50, 50, 1) 0%, rgba(10, 10, 10, 1) 50%, rgba(50, 50, 50, 1) 100%);
+}
+
+nav {
+  outline: 1px solid green;
+  height: 10%;
+  width: 90%;
+}
+
+#main-content {
+  outline: 1px solid green;
+  height: 50%;
+  width: 90%;
+}
+
+footer {
+  outline: 1px solid green;
+  height: 40%;
+  color: white;
+  background: #323232;
+  width: 90%;
+  display: flex;
+}
+
+footer>div {
+  width: 33%;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: evenly;
+}
+
+footer>div>span {
+  display: inline-block;
+  color: #A46776;
+  font-size: 1.75rem;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+footer .address {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+#Layout-container {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
