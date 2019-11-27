@@ -1,5 +1,9 @@
 @import "reset.css";
 
+html {
+  height: 100%;
+}
+
 body {
   padding: 1.5rem;
   border: 4px solid purple;
@@ -10,22 +14,28 @@ body {
 
 nav {
   outline: 1px solid green;
-  height: 15%;
-  width: 90%;
+  height: 20%;
   display: flex;
   overflow: visible;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .nav-menu {
+  font-size: 4rem;
   outline: 1px solid green;
-  transform: translateX(-270%);
-  display: inline-flex;
+  transform: translateX(-200%);
+  display: inline-block;
   flex-flow: column;
   line-height: 1.5;
   color: white;
   justify-content: center;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all 1.25s ease-in-out .5s;
+  align-self: baseline;
+  height: 100%;
+  position: fixed;
+  width: 33%;
 }
 
 .navSlide {
@@ -34,6 +44,10 @@ nav {
 
 .hamburger {
   transition: all .2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid green;
+  display: inline-block;
+  align-self: center;
 }
 
 .hamburger:hover {
@@ -52,11 +66,12 @@ nav {
   height: 50%;
   width: 90%;
   visibility: hidden;
+  transition: all 1.25s ease-in-out .5s;
 }
 
 footer {
   padding-top: 2rem;
-  height: 35%;
+  height: 30%;
   color: white;
   background: #323232;
   width: 90%;
@@ -64,6 +79,7 @@ footer {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 1.25s ease-in-out .5s;
 }
 
 footer>div {
@@ -99,4 +115,9 @@ footer>div>span {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
+  transition: all 1.25s ease-in-out .5s;
+}
+
+.darken {
+  opacity: 0.2;
 }
