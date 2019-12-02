@@ -1,6 +1,8 @@
 @import "reset.css";
 
-html {}
+html {
+  font-family: 'Kalam', cursive;
+}
 
 body {
   background: rgb(50, 50, 50);
@@ -14,7 +16,10 @@ body {
   transition: all 1.25s ease-in-out .5s;
 }
 
-nav {}
+nav {
+  position: fixed;
+  z-index: 1;
+}
 
 .hamburger {
   transition: all .2s ease-in-out;
@@ -60,9 +65,21 @@ nav {}
 
 #main-content {
   outline: 1px solid green;
-  width: 90%;
   /* visibility: hidden; */
   transition: all 1.25s ease-in-out .5s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+h1.title {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  background: black;
+  padding: 1.25rem;
+  font-size: 2.5rem;
 }
 
 .hero {
@@ -70,7 +87,7 @@ nav {}
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 footer {
@@ -82,7 +99,7 @@ footer {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 1.25s ease-in-out .5s;
-  width: 90%;
+  width: 100%;
   height: 20vh;
 }
 

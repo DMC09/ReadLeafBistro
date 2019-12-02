@@ -6,14 +6,15 @@ html
     title Red Leaf Bistro
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    link(href='https://fonts.googleapis.com/css?family=Caveat|Courgette|Kalam:400,700|Kaushan+Script|Lobster+Two:400,400i,700,700i|Righteous&display=swap', rel='stylesheet')
     link(rel='stylesheet', href='/css/main.css')
   body
     // Template Container
     #Layout-container
       block nav
       //Nav-burger container
-      nav 
-        div.hamburger(onclick='navAni()')
+      nav(onclick='navAni()')
+        div.hamburger
           div.line
           div.line
           div.line
