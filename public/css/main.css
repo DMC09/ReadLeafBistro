@@ -97,7 +97,7 @@ h1.title {
   height: 100vh;
 }
 
-.about-Container, .res-Container {
+.about-Container, .res-Container, .tab-Container {
   border: 1px solid green;
   display: flex;
   flex-flow: column;
@@ -154,29 +154,33 @@ h1.title {
   background: #BEA5AA;
 }
 
-.tabContainer {
-  background: white;
-  height: 500px;
-  width: 500px;
+.tab-box {
   display: flex;
+  flex-flow: row;
+  background: red;
 }
 
 .tabHeaderMenu {
-  background: green;
-  flex-shrink: 0 color:red;
+  background: white;
+  color: black;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.tab-button {
+  color: green;
 }
 
 .tab-Content {
   display: none;
 }
 
-.tabHeaderContainer div {
-  flex-basis: 25%;
-  cursor: pointer;
-  padding: 1rem;
-  border: 1px solid white;
+.tab-Content-active {
+  display: block;
 }
 
+/* FOOTER content */
 footer {
   color: #EFE5EC;
   background: #323232;

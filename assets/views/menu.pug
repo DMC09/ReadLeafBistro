@@ -4,40 +4,40 @@ block seo
 block content
   // Main Content container
   div#main-content
-  .tabContainer
-  .tabHeaderMenu
-    .tab_button(onclick='()', data-for-target='1') Tab 1
-    .tab_button(onclick='()', data-for-target='2') Tab 2
-    .tab_button(onclick='()', data-for-target='3') Tab 3
-    .tab_button(onclick='()', data-for-target='4') Tab 4
-  .tab-Content(data-tab='1')
-    h2 Apps
-    ol
-      li Stuffed Mushrooms
-      li  Fried Calimari
-      li  Ulimate chips combo
-      li  Tomato Basil Soup
-  .tab-Content(data-tab='2')
-    h2 Apps
-    ol
-      li Stuffed Mushrooms
-      li  Fried Calimari
-      li  Ulimate chips combo
-      li  Tomato Basil Soup
-  .tab-Content(data-tab='3')
-    h2 Apps
-    ol
-      li Stuffed Mushrooms
-      li  Fried Calimari
-      li  Ulimate chips combo
-      li  Tomato Basil Soup
-  .tab-Content(data-tab='4')
-    h2 Apps
-    ol
-      li Stuffed Mushrooms
-      li  Fried Calimari
-      li  Ulimate chips combo
-      li  Tomato Basil Soup
-
+  .tab-Container
+    .tab-box
+      .tabHeaderMenu
+        .tab-button(onclick='()', data-for-target='1') Apps
+        .tab-button(onclick='()', data-for-target='2') Entrees
+        .tab-button(onclick='()', data-for-target='3') Desserts
+        .tab-button(onclick='()', data-for-target='4') Drinks
+      .tab-Content.tab-Content-active(data-tab='1')
+        h2 
+        ol
+          li  Maple Baked Beans
+          li  Pâté chinois
+          li  Donair Kebabs
+          li  French Pea Soup
+      .tab-Content(data-tab='2')
+        h2 
+        ol
+          li  Seared Duck
+          li  Tourtière
+          li  Quebec Poutine
+          li  Buffalo Burger
+      .tab-Content(data-tab='3')
+        h2 
+        ol
+          li  Date Square
+          li  Pouding chômeur
+          li  Nanaimo bar
+          li  Schmoo torte
+      .tab-Content(data-tab='4')
+        h2 
+        ol
+          li  Beer
+          li  Wine
+          li  Caribou
+          li  Soda
 block foot
 block scripts
