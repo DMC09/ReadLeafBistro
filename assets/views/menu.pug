@@ -12,29 +12,33 @@ block content
         .tab-button(onclick='()', data-for-target='3') Desserts
         .tab-button(onclick='()', data-for-target='4') Drinks
       .tab-Content.tab-Content-active(data-tab='1')
-        h2 
-        ol
-          li  Maple Baked Beans
-          li  Pâté chinois
-          li  Donair Kebabs
-          li  French Pea Soup
+        ol.items 
+          li 
+            |Maple Baked Beans .......................................................................
+            span 5$
+          li
+            |Pâté chinois .......................................................................
+            span 4$
+          li  
+            |Donair Kebabs .......................................................................
+            span 7$
+          li  
+            |French Pea Soup .......................................................................
+            span 3$
       .tab-Content(data-tab='2')
-        h2 
-        ol
+        ol.items
           li  Seared Duck
           li  Tourtière
           li  Quebec Poutine
           li  Buffalo Burger
       .tab-Content(data-tab='3')
-        h2 
-        ol
+        ol.items
           li  Date Square
           li  Pouding chômeur
           li  Nanaimo bar
           li  Schmoo torte
       .tab-Content(data-tab='4')
-        h2 
-        ol
+        ol.items
           li  Beer
           li  Wine
           li  Caribou
