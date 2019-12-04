@@ -154,6 +154,29 @@ h1.title {
   background: #BEA5AA;
 }
 
+.tabContainer {
+  background: white;
+  height: 500px;
+  width: 500px;
+  display: flex;
+}
+
+.tabHeaderMenu {
+  background: green;
+  flex-shrink: 0 color:red;
+}
+
+.tab-Content {
+  display: none;
+}
+
+.tabHeaderContainer div {
+  flex-basis: 25%;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
 footer {
   color: #EFE5EC;
   background: #323232;

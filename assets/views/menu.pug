@@ -4,11 +4,40 @@ block seo
 block content
   // Main Content container
   div#main-content
-    .container
-      header
-        h1 
-          | Read leaf Bistro
-        h5
-          | This is the menu
+  .tabContainer
+  .tabHeaderMenu
+    .tab_button(onclick='()', data-for-target='1') Tab 1
+    .tab_button(onclick='()', data-for-target='2') Tab 2
+    .tab_button(onclick='()', data-for-target='3') Tab 3
+    .tab_button(onclick='()', data-for-target='4') Tab 4
+  .tab-Content(data-tab='1')
+    h2 Apps
+    ol
+      li Stuffed Mushrooms
+      li  Fried Calimari
+      li  Ulimate chips combo
+      li  Tomato Basil Soup
+  .tab-Content(data-tab='2')
+    h2 Apps
+    ol
+      li Stuffed Mushrooms
+      li  Fried Calimari
+      li  Ulimate chips combo
+      li  Tomato Basil Soup
+  .tab-Content(data-tab='3')
+    h2 Apps
+    ol
+      li Stuffed Mushrooms
+      li  Fried Calimari
+      li  Ulimate chips combo
+      li  Tomato Basil Soup
+  .tab-Content(data-tab='4')
+    h2 Apps
+    ol
+      li Stuffed Mushrooms
+      li  Fried Calimari
+      li  Ulimate chips combo
+      li  Tomato Basil Soup
+
 block foot
 block scripts

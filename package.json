@@ -4,7 +4,8 @@
   "description": "restaurant",
   "main": "app/server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "dev": "nodemon --ext js,pug,css"
   },
   "repository": {
     "type": "git",
