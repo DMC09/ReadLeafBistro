@@ -7,12 +7,12 @@ block content
   .tab-Container
     .tab-box
       .tabHeaderMenu
-        .tab-button(onclick='()', data-for-target='1') Apps
-        .tab-button(onclick='()', data-for-target='2') Entrees
-        .tab-button(onclick='()', data-for-target='3') Desserts
-        .tab-button(onclick='()', data-for-target='4') Drinks
-      .tab-Content.tab-Content-active(data-tab='1')
-        ol.items 
+        .tab-button(onclick='appDrawer()', data-for-target='1') Apps
+        .tab-button(onclick='entreeDrawer()', data-for-target='2') Entrees
+        .tab-button(onclick='dessertsDrawer()', data-for-target='3') Desserts
+        .tab-button(onclick='drinksDrawer()', data-for-target='4') Drinks
+      .tab-Content.apps(data-tab='1')
+        ol.items
           li 
             |Maple Baked Beans .......................................................................
             span 5$
@@ -25,23 +25,47 @@ block content
           li  
             |French Pea Soup .......................................................................
             span 3$
-      .tab-Content(data-tab='2')
+      .tab-Content.entrees(data-tab='2')
         ol.items
-          li  Seared Duck
-          li  Tourtière
-          li  Quebec Poutine
-          li  Buffalo Burger
-      .tab-Content(data-tab='3')
+          li 
+            |Seared Duck .......................................................................
+            span 11$
+          li
+            |Tourtière .......................................................................
+            span 8$
+          li  
+            |Quebec Poutine .......................................................................
+            span 8$
+          li  
+            |Buffalo Burger .......................................................................
+            span 12$
+      .tab-Content.desserts(data-tab='3')
         ol.items
-          li  Date Square
-          li  Pouding chômeur
-          li  Nanaimo bar
-          li  Schmoo torte
-      .tab-Content(data-tab='4')
+          li 
+            |Date Square .......................................................................
+            span 5$
+          li
+            |Pouding chômeur .......................................................................
+            span 5$
+          li  
+            |Nanaimo bar .......................................................................
+            span 3$
+          li  
+            |Schmoo torte .......................................................................
+            span 4$
+      .tab-Content.drinks(data-tab='4')
         ol.items
-          li  Beer
-          li  Wine
-          li  Caribou
-          li  Soda
+          li 
+            |Beer .......................................................................
+            span 3$
+          li
+            |Wine .......................................................................
+            span 6$
+          li  
+            |Caribou .......................................................................
+            span 4$
+          li  
+            |Soda .......................................................................
+            span 2$
 block foot
 block scripts

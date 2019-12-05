@@ -159,8 +159,8 @@ h1.title {
   display: flex;
   flex-flow: column;
   background: red;
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
 }
 
 .tabHeaderMenu {
@@ -175,7 +175,7 @@ h1.title {
 .tab-button {
   color: green;
   background: orange;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   width: 25%;
   height: 15%;
   border: 1px solid white;
@@ -185,13 +185,14 @@ h1.title {
 
 .tab-Content {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .tab-Content-active {
   display: flex;
   flex-basis: 66%;
   padding: .5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   justify-content: center;
   text-align: right;
   border: 1px solid white;
@@ -206,6 +207,7 @@ h1.title {
 
 .items>li {
   color: white;
+  text-align: right;
 }
 
 .items>li>span {
