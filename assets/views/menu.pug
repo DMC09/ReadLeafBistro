@@ -4,68 +4,69 @@ block seo
 block content
   // Main Content container
   div#main-content
-  .tab-Container
-    .tab-box
-      .tabHeaderMenu
-        .tab-button(onclick='appDrawer()', data-for-target='1') Apps
-        .tab-button(onclick='entreeDrawer()', data-for-target='2') Entrees
-        .tab-button(onclick='dessertsDrawer()', data-for-target='3') Desserts
-        .tab-button(onclick='drinksDrawer()', data-for-target='4') Drinks
-      .tab-Content.apps(data-tab='1')
-        ol.items
-          li 
-            |Maple Baked Beans .......................................................................
-            span 5$
-          li
-            |Pâté chinois .......................................................................
-            span 4$
-          li  
-            |Donair Kebabs .......................................................................
-            span 7$
-          li  
-            |French Pea Soup .......................................................................
-            span 3$
-      .tab-Content.entrees(data-tab='2')
-        ol.items
-          li 
-            |Seared Duck .......................................................................
-            span 11$
-          li
-            |Tourtière .......................................................................
-            span 8$
-          li  
-            |Quebec Poutine .......................................................................
-            span 8$
-          li  
-            |Buffalo Burger .......................................................................
-            span 12$
-      .tab-Content.desserts(data-tab='3')
-        ol.items
-          li 
-            |Date Square .......................................................................
-            span 5$
-          li
-            |Pouding chômeur .......................................................................
-            span 5$
-          li  
-            |Nanaimo bar .......................................................................
-            span 3$
-          li  
-            |Schmoo torte .......................................................................
-            span 4$
-      .tab-Content.drinks(data-tab='4')
-        ol.items
-          li 
-            |Beer .......................................................................
-            span 3$
-          li
-            |Wine .......................................................................
-            span 6$
-          li  
-            |Caribou .......................................................................
-            span 4$
-          li  
-            |Soda .......................................................................
-            span 2$
+    .tab-Container
+      .tab-box
+        .tabHeaderMenu
+          .tab-button(onclick='appDrawer()', data-for-target='1') Apps
+          .tab-button(onclick='entreeDrawer()', data-for-target='2') Entrees
+          .tab-button(onclick='dessertsDrawer()', data-for-target='3') Desserts
+          .tab-button(onclick='drinksDrawer()', data-for-target='4') Drinks
+        .tab-mat
+          .tab-Content.apps.tab-Content-active
+            ol.items
+              li 
+                |Maple Baked Beans .......................................................................
+                span 5$
+              li
+                |Pâté chinois .......................................................................
+                span 4$
+              li  
+                |Donair Kebabs .......................................................................
+                span 7$
+              li  
+                |French Pea Soup .......................................................................
+                span 3$
+          .tab-Content.entrees
+            ol.items
+              li 
+                |Seared Duck .......................................................................
+                span 11$
+              li
+                |Tourtière .......................................................................
+                span 8$
+              li  
+                |Quebec Poutine .......................................................................
+                span 8$
+              li  
+                |Buffalo Burger .......................................................................
+                span 12$
+          .tab-Content.desserts
+            ol.items
+              li 
+                |Date Square .......................................................................
+                span 5$
+              li
+                |Pouding chômeur .......................................................................
+                span 5$
+              li  
+                |Nanaimo bar .......................................................................
+                span 3$
+              li  
+                |Schmoo torte .......................................................................
+                span 4$
+          .tab-Content.drinks
+            ol.items
+              li 
+                |Beer .......................................................................
+                span 3$
+              li
+                |Wine .......................................................................
+                span 6$
+              li  
+                |Caribou .......................................................................
+                span 4$
+              li  
+                |Soda .......................................................................
+                span 2$
 block foot
 block scripts
