@@ -10,32 +10,53 @@ const entContent = document.querySelector('.entrees')
 const desContent = document.querySelector('.desserts')
 const driContent = document.querySelector('.drinks')
 const tabContent = [appContent, entContent, desContent, driContent]
+const button = document.querySelectorAll('.tab-button')
 
 
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "250px";
-// }
-//
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-// }
 
-const reset = () => {
+
+
+reset = () => {
   tabContent.forEach(element => {
-    if (element.style.opacity = "1") {
-      console.log('this has an opacity of 1');
-    }
+    element.classList.remove("tab-Content-active")
+  })
+  button.forEach(element => {
+    element.style.background = ""
   })
 }
-
-const appDrawer = () => {
+appDrawer = () => {
   reset()
-  appContent.style.opacity = "1"
+  appContent.classList.toggle("tab-Content-active")
+  button[0].style.background = "#3D180E"
+
 }
 
-// entreeDrawer()
-// dessertsDrawer()
-// drinksDrawer()
+entreeDrawer = () => {
+  reset()
+  entContent.classList.toggle("tab-Content-active")
+  button[1].style.background = "#3D180E"
+
+}
+
+dessertsDrawer = () => {
+  reset()
+  desContent.classList.toggle("tab-Content-active")
+  button[2].style.background = "#3D180E"
+
+}
+
+drinksDrawer = () => {
+  reset()
+  driContent.classList.toggle("tab-Content-active")
+  button[3].style.background = "#3D180E"
+
+}
+
+
+
+
+
+
 
 
 // NAVIGATION ANIMATION
