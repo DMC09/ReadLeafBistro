@@ -98,7 +98,7 @@ h1.title {
   height: 100vh;
 }
 
-.about-Container, .res-Container, .tab-Container {
+.about-Container, .res-Container, .tab-Container, .contact-Container {
   border: 1px solid green;
   display: flex;
   flex-flow: column;
@@ -156,6 +156,7 @@ h1.title {
   background: #BEA5AA;
 }
 
+/* MENU content */
 .tab-box {
   display: flex;
   flex-flow: column;
@@ -208,11 +209,6 @@ h1.title {
   flex-flow: column;
   height: 100%;
   justify-content: space-evenly;
-  transition: all 1s ease-in-out;
-}
-
-.reveal {
-  opacity: 1;
 }
 
 .items>li {
@@ -223,6 +219,28 @@ h1.title {
 .items>li>span {
   color: green;
   padding: 0 .5rem;
+}
+
+/* contact content */
+form {
+  display: flex;
+  flex-flow: column;
+  width: 75%;
+  height: 75%;
+  justify-content: space-around;
+}
+
+input, textarea {
+  background: none;
+  border: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: red;
+}
+
+label {
+  color: white;
 }
 
 /* FOOTER content */
