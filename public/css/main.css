@@ -290,6 +290,7 @@ input:focus, textarea:focus {
   color: white;
   font-size: 1.25rem;
   text-align: justify;
+  font-family: inherit;
 }
 
 label {
@@ -359,6 +360,19 @@ footer>div>span {
 }
 
 /* media queries */
-@media only screen and (max-width : 768px) {
-  /* Styles here */
+@media screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+  }
+
+  .border {
+    height: 2.5px;
+    width: 75%;
+  }
+
+  footer {
+    flex-flow: column;
+    height: initial;
+    align-items: center;
+  }
 }
