@@ -56,12 +56,10 @@ drinksDrawer = () => {
 
 
 
-
-
-
 // NAVIGATION ANIMATION
 const navAni = () => {
   console.log('Nav animation');
+  burger.classList.toggle('change')
   menu.classList.toggle('navSlide')
   layout.forEach((obj) => {
     obj.classList.toggle('darken')
