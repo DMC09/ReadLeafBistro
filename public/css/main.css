@@ -402,4 +402,8 @@ footer>div>span {
     height: initial;
     align-items: center;
   }
+
+  footer>div {
+    width: initial;
+  }
 }
