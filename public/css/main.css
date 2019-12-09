@@ -365,6 +365,33 @@ footer>div>span {
     position: absolute;
   }
 
+  .nav-menu {
+    font-size: 1.5rem;
+  }
+
+  #container {
+    height: 100vh;
+  }
+
+  .items {
+    font-size: 1rem;
+  }
+
+  .box>h2 {
+    flex-basis: 25%;
+    font-size: 2rem;
+  }
+
+  .box {
+    height: 60%;
+    width: 70%;
+  }
+
+  .tab-box {
+    height: 85%;
+    width: 95%;
+  }
+
   .border {
     height: 2.5px;
     width: 75%;
