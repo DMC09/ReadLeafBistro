@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const port = 3000
+const port = 8080
 const routes = require('./routes.js');
 
 
@@ -12,5 +12,5 @@ app.use("/", routes);
 app.use(express.static('public'));
 // template engine
 app.set('view engine', 'pug')
-// listening on port 3000
+// listening on port 8080
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
