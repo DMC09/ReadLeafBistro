@@ -1,12 +1,17 @@
-# RedLeafBistro
+## Red Leaf Bistro
+A web app template for the Read Leaf Bistro restaurant. 
 
-### Restaurant Web app 
 
-made with
-- HTML
-- CSS
-- JS 
-- Node
+## Screenshots
+Include logo/demo screenshot etc.
 
-[Live](https://blooming-dawn-59191.herokuapp.com)
-![Homepage](restaurant.png)
+## Tech/framework used
+
+<b>Built with</b>
+- HTML,CSS,Javascript
+
+
+## License
+A short snippet describing the license (MIT, Apache etc)
+
+MIT © [Yourname]()
