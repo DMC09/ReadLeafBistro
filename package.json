@@ -18,11 +18,9 @@
   },
   "homepage": "https://github.com/DMC09/ReadLeafBistro#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "gulp-imagemin": "^7.1.0",
     "nodemon": "^2.0.2"
   }
 }

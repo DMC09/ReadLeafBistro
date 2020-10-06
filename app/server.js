@@ -11,6 +11,5 @@ app.use("/", routes);
 // static files folder
 app.use(express.static('public'));
 // template engine
-app.set('view engine', 'pug')
 // listening on port 8080
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
