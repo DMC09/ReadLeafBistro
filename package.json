@@ -2,10 +2,9 @@
   "name": "readleafbistro",
   "version": "1.0.0",
   "description": "restaurant",
-  "main": "app/server.js",
+  "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js",
-    "dev": "nodemon --ext js,pug,css"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,8 @@
   },
   "homepage": "https://github.com/DMC09/ReadLeafBistro#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mmenu-js": "^8.5.18"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
