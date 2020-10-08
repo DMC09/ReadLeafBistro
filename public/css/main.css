@@ -1,8 +1,35 @@
 @import "reset.css";
-@import "utility.css.css";
+@import "utility.css";
 
-nav{border: 2px solid black}
-section.hero{border: 2px solid black}
-section.about{border: 2px solid black}
-section.menu{border: 2px solid black}
-section.customers{border: 2px solid black}
+nav {
+  border: 2px solid black;
+}
+section.hero {
+  border: 2px solid black;
+}
+section.about {
+  border: 2px solid black;
+}
+section.menu {
+  border: 2px solid black;
+}
+section.customers {
+
+  border: 2px solid black;
+}
+
+footer{
+  border: 1px solid green;
+  background: #363434;
+  color: #e5e5e5;
+
+}
+footer p{
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.footer-links ul{
+padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
