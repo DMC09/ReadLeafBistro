@@ -1,0 +1,12 @@
+.section_header {
+  color: #b12020;
+  font-family: "Rufina", serif;
+  font-size: var(--section-title-font);
+  text-align: center;
+}
+
+.bar {
+  background: black;
+  height: 2px;
+  border: none;
+}
