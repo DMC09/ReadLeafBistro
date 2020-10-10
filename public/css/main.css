@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "utility.css";
-
+/* --------NAV SECTION----- */
 section.hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/hero.jpg");
@@ -28,7 +28,7 @@ nav ul {
   font-size: 1.5rem;
   flex-basis: 40%;
 }
-
+/* --------ABOUT SECTION----- */
 section.about {
   border: 2px solid black;
   display: flex;
@@ -83,7 +83,6 @@ section.about {
   font-size: 2.5rem;
   text-align: center;
 }
-
 .bar {
   background: black;
   height: 2px;
@@ -96,7 +95,7 @@ section.about {
   margin-top: 4rem;
   text-align: justify;
 }
-
+/* --------MENU SECTION----- */
 section.menu {
   border: 2px solid black;
   background: #E2E2E2
@@ -110,35 +109,42 @@ grid-gap: 5px 15px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
 }
-.menu .menu-group{
-border: 1px solid red;
+
+.menu-container .menu-group{
+border: 4px  dotted purple;
 padding: 0.5rem 1.5rem;
+}
+.menu-group .menu-title-group{
+  colr: #b12020;
+border: 3px solid red;
+}
+.menu-group .menu-section{
+border: 2px solid orange;
 
 }
-.menu .menu-title{
-  color: #b12020;
-  font-size: 1.5rem;
+
+.menu-section .item{
+  border: 2px solid black;
 }
-.menu-group .menu-title-bar{
-  background:  black;
-height: 2px;
-top: -5px;
-width: 15%;
-border: none;
-right: 50%;
-position: relative;
+
+.item .item-title{
+  color: green;
 }
+.item .item-desc{
+  color: purple;
+}
+/* --------CUSTOMERS SECTION----- */
 
 section.customers {
   border: 2px solid black;
   display: flex;
   flex-flow: column;
 }
-
+/* --------CUSTOMERS SECTION----- */
 section.contact{
 background: #E2E2E2;
 }
-
+/* --------REVIEW SECTION----- */
 .customers .review-container {
   display: flex;
   align-items: center;
@@ -172,7 +178,7 @@ font-size: 1.5rem;
   font-size: 1.25rem;
 }
 
-
+/* --------FOOTER SECTION----- */
 footer {
   border: 1px solid green;
   background: #363434;
