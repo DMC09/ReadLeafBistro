@@ -14,7 +14,7 @@ section.hero {
 }
 section.hero nav {
   display: flex;
-  color: orange;
+  color: white;
   height: 15vh;
   justify-content: space-between;
 }
@@ -25,7 +25,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   flex-basis: 40%;
 }
 
@@ -35,7 +35,6 @@ section.about {
 }
 
 .about .about_img-container {
-  border: 10px solid green;
   grid-row-gap: 15px;
   grid-column-gap: 15px;
   display: grid;
@@ -48,6 +47,7 @@ section.about {
 }
 .about_img-container img:nth-child(1) {
   background-image: url("../images/cheeseburger.jpg");
+  border: none;
   height: 400px;
   width: 250px;
   background-position: center;
@@ -56,6 +56,7 @@ section.about {
 }
 .about_img-container img:nth-child(2) {
   background-image: url("../images/pizza_slice.jpg");
+  border: none;
   height: 400px;
   width: 250px;
   background-position: center;
@@ -64,6 +65,7 @@ section.about {
 }
 .about_img-container img:nth-child(3) {
   background-image: url("../images/salmon_cut.jpg");
+  border: none;
   height: 250px;
   width: 100%;
   grid-column: 1/3;
@@ -71,36 +73,106 @@ section.about {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.about .about_text-container {
-  padding: 5rem 9rem 1rem ;
+.about_text-container {
+  padding: 5rem 9rem 1rem;
   width: 60%;
-
 }
-.about_text-container .section_header {
+.section_header {
   color: #b12020;
   font-family: "Rufina", serif;
   font-size: 2.5rem;
   text-align: center;
 }
 
-.about_text-container .bar{
-  background:  black;
+.bar {
+  background: black;
   height: 2px;
   border: none;
   width: 50%;
 }
-.about_text-container .about-text{
-font-size: 1.5rem;
+.about-text {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-top: 4rem;
+  text-align: justify;
 }
-
 
 section.menu {
   border: 2px solid black;
+  background: #E2E2E2
 }
+
+.menu .menu-container{
+border: 4px dashed blue;
+padding: 1rem;
+display: grid;
+grid-gap: 5px 15px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.menu .menu-group{
+border: 1px solid red;
+padding: 0.5rem 1.5rem;
+
+}
+.menu .menu-title{
+  color: #b12020;
+  font-size: 1.5rem;
+}
+.menu-group .menu-title-bar{
+  background:  black;
+height: 2px;
+top: -5px;
+width: 15%;
+border: none;
+right: 50%;
+position: relative;
+}
+
 section.customers {
   border: 2px solid black;
+  display: flex;
+  flex-flow: column;
 }
+
+section.contact{
+background: #E2E2E2;
+}
+
+.customers .review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 8rem 2rem;
+}
+.review-container .review-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+.review-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.review-card h1 {
+padding: 2rem 0.5rem;
+font-size: 1.5rem;
+}
+
+.review-card .quote_icon-container{
+  padding: 1rem 0.5rem;
+  color: #b12020;
+  font-size: 1.5rem;
+
+}
+
+.review-card .quote-text{
+  font-size: 1.25rem;
+}
+
+
 footer {
   border: 1px solid green;
   background: #363434;
