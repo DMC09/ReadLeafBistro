@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DMC09/ReadLeafBistro#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "fullpage.js": "^3.0.9",
     "mmenu-js": "^8.5.18"
   },
   "devDependencies": {
