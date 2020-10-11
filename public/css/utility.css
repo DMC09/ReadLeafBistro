@@ -1,13 +1,15 @@
 .section_header {
   color: #b12020;
-  font-family: "Rufina", serif;
+font-family: 'Lobster', cursive;
   font-size: var(--section-title-font);
   text-align: center;
   padding:  0.5rem 2rem;
 }
 
-.bar {
-  background: black;
-  height: 2px;
-  border: none;
+.footer-bar{
+
+  color: #5e5c5c;
+  background: #5e5c5c;
+height: 2px;
+border: none;
 }
