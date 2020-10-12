@@ -4,6 +4,7 @@
   font-size: var(--section-title-font);
   text-align: center;
   padding: 0.5rem 2rem;
+text-decoration: underline;
 }
 
 .footer-bar {
@@ -15,4 +16,9 @@
 
 p.copyright {
   text-align: center;
+}
+
+.link {
+text-decoration: none;
+color: white;
 }
