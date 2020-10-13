@@ -4,7 +4,7 @@
 :root {
   --section-title: 5rem;
   --hero-title: 6rem;
-  --hero-subtitle: 3rem;
+  --hero-subtitle: 2rem;
   --menu-title: 2.25rem;
   --menu-item: 1.5rem;
   --menu-item-desc: 1rem;
@@ -13,7 +13,7 @@
   --quote-icon: 3rem;
   --footer-icon: 2rem;
   --nav-link: 1.5rem;
-  --main-red: #B12020;
+  --main-red: #b12020;
   --main-grey: #b4b4b4;
   --main-white: #e2e2e2;
 }
@@ -46,7 +46,7 @@ nav ul {
   flex-basis: 40%;
   padding-right: 5rem;
 }
-nav ul li{
+nav ul li {
   font-size: var(--nav-link);
 }
 
@@ -67,7 +67,7 @@ nav ul li{
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #e2e2e2;
+  color: #9d9d9d;
   /* font-family: "Lobster", cursive; */
 }
 
@@ -133,7 +133,7 @@ section.about {
 /* --------MENU SECTION----- */
 section.menu {
   background: #e2e2e2;
-  padding-top:4rem;
+  padding-top: 4rem;
 }
 .menu-container {
   padding: 4rem 2rem;
@@ -161,12 +161,10 @@ section.menu {
 }
 .menu-section .item {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
-
-
 }
 .item .item-title {
   color: black;
-font-size: var(--menu-item);
+  font-size: var(--menu-item);
 }
 .item .item-desc {
   color: #3d3d3d;
@@ -180,7 +178,7 @@ section.customers {
   background: #b4b4b4;
   display: flex;
   flex-flow: column;
-  padding-top:4rem;
+  padding-top: 4rem;
 }
 .review-container {
   display: flex;
@@ -213,7 +211,7 @@ section.customers {
 }
 .quote_icon-container i {
   color: rgba(177, 32, 32, 0.8);
-  font-size:var(--quote-icon);
+  font-size: var(--quote-icon);
 }
 .review-card .quote-text {
   color: var(--main-white);
@@ -245,7 +243,7 @@ footer p {
   display: flex;
   flex-flow: column;
   width: 25%;
-  align-items:start;
+  align-items: start;
 }
 .directory-info {
   /* border: 2px solid green; */
@@ -275,6 +273,6 @@ footer p {
 }
 .contact-icon-container i {
   color: #b12020;
-font-size: var(--footer-icon);
+  font-size: var(--footer-icon);
   padding-right: 1.5rem;
 }
