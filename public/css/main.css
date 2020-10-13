@@ -2,14 +2,20 @@
 @import "utility.css";
 /* ======VARS ======= */
 :root {
-  --section-title-font: 1rem;
-  --menu-title-font: 1rem;
-  --menu-item-font: 1rem;
-  --menu-item-desc-font: 1rem;
-  --nav-link: 1rem;
-  --main-color: #B12020;
-  --main-white: #b4b4b4;
-  --alt-white: #e2e2e2;
+  --section-title: 5rem;
+  --hero-title: 6rem;
+  --hero-subtitle: 3rem;
+  --menu-title: 2.25rem;
+  --menu-item: 1.5rem;
+  --menu-item-desc: 1rem;
+  --quote-text: 3rem;
+  --quote-author: 2rem;
+  --quote-icon: 3rem;
+  --footer-icon: 2rem;
+  --nav-link: 1.5rem;
+  --main-red: #B12020;
+  --main-grey: #b4b4b4;
+  --main-white: #e2e2e2;
 }
 
 /* --------NAV SECTION----- */
@@ -38,7 +44,12 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   flex-basis: 40%;
+  padding-right: 5rem;
 }
+nav ul li{
+  font-size: var(--nav-link);
+}
+
 .hero-caption {
   text-align: center;
   position: absolute;
@@ -46,17 +57,17 @@ nav ul {
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(177, 32, 32, 1.3);
-
+  font-size: var(--hero-title);
   font-family: "Lobster", cursive;
 }
 .hero-subcaption {
   text-align: center;
+  font-size: var(--hero-subtitle);
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e2e2e2;
-
   /* font-family: "Lobster", cursive; */
 }
 
@@ -114,10 +125,10 @@ section.about {
   width: 60%;
 }
 .about-text {
-
   line-height: 1.5;
   margin-top: 4rem;
   text-align: justify;
+  font-size: 1.75rem;
 }
 /* --------MENU SECTION----- */
 section.menu {
@@ -132,41 +143,39 @@ section.menu {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-
 .menu-container .menu-group {
   padding: 2rem 1rem;
 }
 .menu-group .menu-title-group {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-
 .menu-title-group .menu-title {
   color: #b12020;
   display: inline-block;
-  font-size: var(--menu-title-font);
+  font-size: var(--menu-title);
   line-height: 0.85;
   text-shadow: 2px 2px #e2e2e2, 2px -2px #e2e2e2, -2px 2px #e2e2e2,
     -2px -2px #e2e2e2;
 }
-
 .menu-group .menu-section {
 }
-
 .menu-section .item {
-  padding: 0.5rem 0.5rem 0.5rem 2rem;
-}
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
 
+
+}
 .item .item-title {
   color: black;
-
+font-size: var(--menu-item);
 }
 .item .item-desc {
   color: #3d3d3d;
   padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: var(--menu-item-desc);
 }
 
 /* --------CUSTOMERS SECTION----- */
-
 section.customers {
   background: #b4b4b4;
   display: flex;
@@ -186,7 +195,7 @@ section.customers {
   text-align: center;
   justify-content: space-around;
   /* background-image: url('../images/salad.jpg'); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/salad.jpg");
   padding: 1rem;
   background-position: center;
@@ -194,7 +203,6 @@ section.customers {
   background-size: cover;
   height: 800px;
 }
-
 .review-card h1 {
   padding: 2rem 0.5rem;
 
@@ -202,17 +210,21 @@ section.customers {
 }
 .review-card .quote_icon-container {
   padding: 1rem 0.5rem;
-
 }
-
 .quote_icon-container i {
   color: rgba(177, 32, 32, 0.8);
+  font-size:var(--quote-icon);
 }
 .review-card .quote-text {
-
-  color: #e2e2e2;
-  width: 60%;
+  color: var(--main-white);
+  font-size: var(--quote-text);
+  width: 80%;
   text-align: center;
+}
+.review-card .quote-author {
+  color: var(--main-white);
+  font-size: var(--quote-author);
+  text-align: left;
 }
 
 /* --------FOOTER SECTION----- */
@@ -224,13 +236,11 @@ footer {
 footer p {
   padding: 1rem 0rem;
 }
-
 .footer-container {
   display: flex;
   width: 80%;
   margin: 0 auto;
 }
-
 .footer-container > div {
   display: flex;
   flex-flow: column;
@@ -243,7 +253,6 @@ footer p {
 .footer-links-container {
   /* border: 2px solid green; */
 }
-
 .footer-links-container ul {
   padding: 1rem 0rem;
   display: flex;
@@ -254,13 +263,10 @@ footer p {
 }
 .social-container {
   /* border: 2px solid green; */
-
 }
-
 .contact-container {
   /* border: 2px solid green; */
 }
-
 .contact-icon-container {
   display: flex;
   align-items: center;
@@ -269,6 +275,6 @@ footer p {
 }
 .contact-icon-container i {
   color: #b12020;
-
+font-size: var(--footer-icon);
   padding-right: 1.5rem;
 }
