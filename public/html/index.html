@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Acme&family=Rufina:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -29,47 +30,29 @@
               <a class="nav-link link" disabled href="#"><li>Menu</li></a>
               <a class="nav-link link" disabled href="#"><li>Customers</li></a>
             </ul>
-            <!-- <div id="nav-icon">
+            <div id="flyoutMenu">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#v">Customers</a></li>
+            </div>
+            <div id="nav-icon">
+
               <span></span>
               <span></span>
               <span></span>
-              <span></span>
-            </div> -->
+            </div>
           </nav>
           <p class="hero-caption">Red Leaf Bistro</p>
-          <div id="nav-icon">
 
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-
-          </div>
-             <div id="container">
-                 <p>Can you spot the item that doesn't belong?</p>
-                 <ul>
-                     <li>Lorem</li>
-                     <li>Ipsum</li>
-                     <li>Dolor</li>
-                     <li>Sit</li>
-                     <li>Bumblebees</li>
-                     <li>Aenean</li>
-                     <li>Consectetur</li>
-                 </ul>
-             </div>
-             <div id="flyoutMenu">
-    <h2><a href="#">Home</a></h2>
-    <h2><a href="#">About</a></h2>
-    <h2><a href="#">Contact</a></h2>
-    <h2><a href="#">Search</a></h2>
-</div>
           <div class="scroll-downs">
             <div class="mousey">
               <div class="scroller"></div>
             </div>
           </div>
+
         </section>
-        <section class="about">
+        <section id="about" class="about">
           <div class="about_img-container">
             <img src="" alt="" />
             <img src="" alt="" />
@@ -89,7 +72,7 @@
             </p>
           </div>
         </section>
-        <section class="menu">
+        <section id="menu" class="menu">
           <p class="section_header">Our Menu</p>
           <div class="menu-container">
             <div class="menu-group">
@@ -190,7 +173,7 @@
             </div>
           </div>
         </section>
-        <section class="customers">
+        <section id="customers" class="customers">
           <div class="section-title">
             <p class="section_header">Our Customers</p>
           </div>
@@ -265,25 +248,31 @@
         </footer>
       </main>
     </div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script>
-    var roundButton = document.querySelector("#nav-icon");
-    roundButton.addEventListener("click", showMenu, false);
+      var roundButton = document.querySelector("#nav-icon");
+      roundButton.addEventListener("click", hideMenu, false);
 
-    var flyoutMenu = document.querySelector("#flyoutMenu");
-    flyoutMenu.addEventListener("click", hideMenu, false);
+      var flyoutMenu = document.querySelector("#flyoutMenu");
+      flyoutMenu.addEventListener("click", hideMenu, false);
 
-    function showMenu(e) {
-        flyoutMenu.classList.add("show");
+      // function showMenu(e) {
+      //     flyoutMenu.classList.add("show");
+      //
+      //     document.body.style.overflow = "hidden";
+      // }
 
-        document.body.style.overflow = "hidden";
-    }
-
-    function hideMenu(e) {
-        flyoutMenu.classList.remove("show");
+      $(document).ready(function(){
+      	$('#nav-icon').click(function(){
+      		$(this).toggleClass('open');
+      	});
+      });
+      function hideMenu(e) {
+        flyoutMenu.classList.toggle("show");
         e.stopPropagation();
 
         document.body.style.overflow = "auto";
-    }
+      }
     </script>
   </body>
 </html>
