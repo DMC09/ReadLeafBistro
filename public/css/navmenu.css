@@ -4,19 +4,18 @@
 }
 
 #nav-icon {
-
   width: 60px;
   height: 45px;
 
-  margin: 1rem ;
+  margin: 1rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 #nav-icon span {
@@ -32,13 +31,11 @@
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-
-
 
 #nav-icon span:nth-child(1) {
   top: 0px;
@@ -86,3 +83,53 @@
   top: 39px;
   left: 8px;
 }
+
+#container li {
+          margin-bottom: 10px;
+      }
+
+      #roundButton {
+          background-color: #96D9FF;
+          margin-bottom: 20px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 10px solid #0065A6;
+          outline: none;
+          transition: transform .3s cubic-bezier(0, .52, 0, 1);
+      }
+
+      #roundButton:hover {
+          background-color: #96D9FF;
+          cursor: pointer;
+          border-color: #003557;
+          transform: scale(1.2, 1.2);
+      }
+
+      #roundButton:active {
+          border-color: #003557;
+          background-color: #FFF;
+      }
+      #flyoutMenu {
+          width: 100vw;
+          height: 100vh;
+          background-color: #FFE600;
+          position: fixed;
+          top: 0;
+          left: 0;
+          transform: translate3d(-100vw, 0, 0);
+          transition: transform .3s cubic-bezier(0, .52, 0, 1);
+      }
+
+      #flyoutMenu h2 a {
+          color: #333;
+          margin-left: 15px;
+          text-decoration: none;
+      }
+
+      #flyoutMenu h2 a:hover {
+          text-decoration: underline;
+      }
+      #flyoutMenu.show {
+          transform: translate3d(0vw, 0, 0);
+      }       
