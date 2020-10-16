@@ -99,15 +99,13 @@ section.about {
 .about_img-container img:nth-child(1) {
   background-image: url("../images/cheeseburger.jpg");
   border: none;
-
-  border: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .about_img-container img:nth-child(2) {
   background-image: url("../images/pizza_slice.jpg");
-  border: none;
+
 
   border: none;
   background-position: center;
@@ -116,7 +114,7 @@ section.about {
 }
 .about_img-container img:nth-child(3) {
   background-image: url("../images/salmon_cut.jpg");
-  border: none;
+
 
   border: none;
   grid-column: 1/3;
@@ -291,7 +289,7 @@ footer p {
 
   /* Nav section */
   .hero-caption {
-    color: blue;
+    color: var(--hero-color);
     font-size: 3.5rem;
   }
   nav ul {
@@ -399,7 +397,7 @@ footer p {
 @media only screen and (min-width: 600px) {
   /* Nav section */
   .hero-caption {
-    color: orange;
+    color: var(--hero-color);
     font-size: 4.5rem;
   }
   nav ul {
@@ -510,7 +508,7 @@ footer p {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .hero-caption {
-    color: yellow;
+    color: var(--hero-color);
   }
   #nav-icon {
     display: none;
@@ -531,7 +529,7 @@ footer p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .hero-caption {
-    color: green;
+    color: var(--hero-color);
   }
 
   nav ul {
@@ -541,12 +539,11 @@ footer p {
     flex-flow: initial;
   }
   .about_img-container {
+    display: flex;
     width: 50%;
-    padding: 0;
-    grid-gap: 0px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 2rem 0rem;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    justify-content: space-between;
   }
   .about_text-container {
     width: 50%;
@@ -555,18 +552,21 @@ footer p {
   }
   .about-text {
     margin-top: 0;
-    line-height: normal;
-    font-size: 1.5rem;
+    line-height: 1.5;
+    font-size: 1.75rem;
     padding: 2rem 1.5rem;
+    width: 80%;
+    margin: 0 auto;
   }
   .about_img-container img:nth-child(1),
   .about_img-container img:nth-child(2) {
     height: 350px;
+    width: 49%;
   }
   .about_img-container img:nth-child(3) {
-    grid-column: 1/3;
+    margin-top: 10px;
     height: 300px;
-    width: 500px;
+    width: 100%;
     background-image: url("../images/salmon_cut.jpg");
   }
   .menu-container {
@@ -618,14 +618,12 @@ footer p {
     width: 80%;
     margin: 0 auto;
   }
-
   .about_img-container img:nth-child(1),
   .about_img-container img:nth-child(2) {
     height: 350px;
     width: 49%;
   }
   .about_img-container img:nth-child(3) {
-    grid-column: 1/3;
     margin-top: 10px;
     height: 300px;
     width: 100%;
