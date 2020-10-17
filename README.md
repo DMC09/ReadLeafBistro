@@ -9,9 +9,3 @@ Include logo/demo screenshot etc.
 
 <b>Built with</b>
 - HTML,CSS,Javascript
-
-
-## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Yourname]()
