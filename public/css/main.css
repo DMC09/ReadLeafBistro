@@ -381,10 +381,10 @@ footer p {
     /* width: 100%; */
   }
   .directory-info {
-    align-items: center;
+    align-items: baseline;
   }
   .links-container {
-    align-items: center;
+    align-items: baseline;
   }
   .social-container {
     align-items: baseline;
