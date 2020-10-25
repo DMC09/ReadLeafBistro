@@ -88,12 +88,8 @@ section.about {
   background: #b4b4b4;
 }
 .about_img-container {
-  grid-row-gap: 15px;
-  grid-column-gap: 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  padding: 2rem 0rem 2rem 5rem;
+  display: flex;
+
   width: 40%;
 }
 .about_img-container img:nth-child(1) {
@@ -106,7 +102,6 @@ section.about {
 .about_img-container img:nth-child(2) {
   background-image: url("../images/pizza_slice.jpg");
 
-
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +109,6 @@ section.about {
 }
 .about_img-container img:nth-child(3) {
   background-image: url("../images/salmon_cut.jpg");
-
 
   border: none;
   grid-column: 1/3;
@@ -309,11 +303,9 @@ footer p {
   }
   .about_img-container {
     width: 100%;
-    padding: 0;
-    grid-gap: 6px 4px;
-    grid-template-columns: repeat(3, 1fr);
+
+    display: flex;
     justify-content: center;
-    justify-items: center;
     padding: 2rem 0rem;
   }
   .about_text-container {
@@ -328,15 +320,12 @@ footer p {
     font-size: 1.5rem;
     padding: 2rem 1.5rem;
   }
-  .about_img-container img:nth-child(1),
-  .about_img-container img:nth-child(2) {
+  .about_img-container img {
+    margin: 0rem 0.2rem;
     width: 125px;
     height: 250px;
   }
   .about_img-container img:nth-child(3) {
-    width: 125px;
-    height: 250px;
-    grid-column: auto;
     background-image: url("../images/bowl.jpg");
   }
   /* Menu section */
@@ -417,11 +406,9 @@ footer p {
   }
   .about_img-container {
     width: 100%;
-    padding: 0;
-    grid-gap: 6px 4px;
-    grid-template-columns: repeat(3, 1fr);
+
+    display: flex;
     justify-content: center;
-    justify-items: center;
     padding: 2rem 0rem;
   }
   .about_text-container {
@@ -435,15 +422,12 @@ footer p {
     font-size: 1.5rem;
     padding: 2rem 4rem 0rem;
   }
-  .about_img-container img:nth-child(1),
-  .about_img-container img:nth-child(2) {
-    width: 160px;
-    height: 250px;
+  .about_img-container img {
+    width: 200px;
+    height: 350px;
+    margin: 0 0.5rem;
   }
   .about_img-container img:nth-child(3) {
-    width: 160px;
-    height: 250px;
-    grid-column: auto;
     background-image: url("../images/bowl.jpg");
   }
   /* Menu section */
@@ -516,11 +500,13 @@ footer p {
   nav ul {
     display: flex;
   }
-  .about_img-container img:nth-child(1),
-  .about_img-container img:nth-child(2),
-  .about_img-container img:nth-child(3) {
+  .about_img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about_img-container img {
     width: 250px;
-    height: 250px;
+    height: 350px;
   }
   .mousey {
     display: none;
@@ -539,6 +525,7 @@ footer p {
     flex-flow: initial;
   }
   .about_img-container {
+
     display: flex;
     width: 50%;
     flex-wrap: wrap;
@@ -561,7 +548,7 @@ footer p {
   .about_img-container img:nth-child(1),
   .about_img-container img:nth-child(2) {
     height: 350px;
-    width: 49%;
+    width: 46%;
   }
   .about_img-container img:nth-child(3) {
     margin-top: 10px;
@@ -592,7 +579,6 @@ footer p {
     margin: 0 auto;
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .hero-caption {
@@ -621,7 +607,7 @@ footer p {
   .about_img-container img:nth-child(1),
   .about_img-container img:nth-child(2) {
     height: 350px;
-    width: 49%;
+    width: 46%;
   }
   .about_img-container img:nth-child(3) {
     margin-top: 10px;
