@@ -1,11 +1,14 @@
 ## Red Leaf Bistro
-A web app template for the Read Leaf Bistro restaurant. 
-
+A template full page app to promote a new fusion restaurant.
+[Live](https://redleafbistro.herokuapp.com)
 
 ## Screenshots
-Include logo/demo screenshot etc.
+![Image of App](public/images/Screenshot_1.png)
+![Another Image of App](public/images/Screenshot_2.png)
+![Another Image of App](public/images/Screenshot_3.png)
+![Another Image of App](public/images/Screenshot_4.png)
 
 ## Tech/framework used
 
 <b>Built with</b>
-- HTML,CSS,Javascript
+- HTML and CSS
