@@ -1,6 +1,6 @@
-## Red Leaf Bistro
-A template full page app to promote a new fusion restaurant.
-[Live](https://redleafbistro.herokuapp.com)
+## Leaf Bistro
+A single-page web app for opening of the Red Leaf Bistro.
+<br /> [Live](https://redleafbistro.herokuapp.com)
 
 ## Screenshots
 ![Image of App](public/images/Screenshot_1.png)
