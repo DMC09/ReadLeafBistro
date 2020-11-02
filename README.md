@@ -1,5 +1,5 @@
-## Leaf Bistro
-A single-page web app for opening of the Red Leaf Bistro.
+## Red Leaf Bistro
+A landing page for the Red Leaf Bistro.
 <br /> [Live](https://redleafbistro.herokuapp.com)
 
 ## Screenshots
