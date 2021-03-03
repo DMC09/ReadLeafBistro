@@ -10,7 +10,7 @@ A landing page for the Red Leaf Bistro.
 
 
 ## Screenshots
-![Image of App](public/images/Screenshot_1.png)
-![Another Image of App](public/images/Screenshot_2.png)
-![Another Image of App](public/images/Screenshot_3.png)
-![Another Image of App](public/images/Screenshot_4.png)
+![Image of App](./images/Screenshot_1.png)
+![Another Image of App](./images/Screenshot_2.png)
+![Another Image of App](./images/Screenshot_3.png)
+![Another Image of App](./images/Screenshot_4.png)
