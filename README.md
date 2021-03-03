@@ -11,6 +11,6 @@ A landing page for the Red Leaf Bistro.
 
 ## Screenshots
 ![Image of App](./images/Screenshot_1.png)
-![Another Image of App](./images/Screenshot_2.png)
-![Another Image of App](./images/Screenshot_3.png)
-![Another Image of App](./images/Screenshot_4.png)
+![Image of App 2](./images/Screenshot_2.png)
+![Image of App 3](./images/Screenshot_3.png)
+![Image of App 4](./images/Screenshot_4.png)
