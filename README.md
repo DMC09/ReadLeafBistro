@@ -1,6 +1,6 @@
 ## Red Leaf Bistro
 A landing page for the Red Leaf Bistro.
-<br /> [Live](https://redleafbistro.herokuapp.com)
+<br /> [Live](https://dmc09.github.io/RedLeafBistro/)
 
 ## Tech stack
 * HTML
